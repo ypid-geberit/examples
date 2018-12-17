@@ -36,4 +36,4 @@ events:
       id: 23
       name: 'fnord'
 
-expected_response: "Watch payload to be indexed by Elasticsearch: {_doc=[{severity=2, msg=Harmless message, @last_timestamp=0, #timeframe=0, #doc_ref=#/doc/test-*/log_network-switch__v1_1984-05-23/doc?id=1, @first_timestamp=0, #count=1, #source=[test], #doc_context_ref=#/context/test-*/doc/1, host=sw01.example.org, doc={offset=-5400, id=1, category=chassis}, #watch_timestamp=2023-05-23T23:23:23.555Z}, {severity=5, msg=Ports Unrecoverable fault on PoE controller 2., @last_timestamp=0, #timeframe=0, #doc_ref=#/doc/test2-*/log_network-switch__v1_1984-05-23/doc?id=2, @first_timestamp=0, #count=1, #source=[test2], #doc_context_ref=#/context/test2-*/doc/2, host=sw01.example.org, doc={offset=-5400, user_object={name=fnord, id=23}, id=2, category=chassis}, #watch_timestamp=2023-05-23T23:23:23.555Z}]}"
+expected_response: "Watch payload to be indexed by Elasticsearch: {_shards={total=5, failed=0, successful=5, skipped=0}, hits={hits=[], total=2, max_score=0.0}, took=11, timed_out=false}"
